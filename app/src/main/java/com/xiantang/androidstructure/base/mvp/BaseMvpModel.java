@@ -1,4 +1,4 @@
-package com.xiantang.androidstructure.base;
+package com.xiantang.androidstructure.base.mvp;
 
 public class BaseMvpModel<P extends IBaseMvp.IPresenter> implements IBaseMvp.IModel<P> {
 

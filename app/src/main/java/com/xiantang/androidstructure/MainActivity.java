@@ -4,8 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.xiantang.androidstructure.base.BaseActivity;
-import com.xiantang.androidstructure.mvc.MvcDemoActivity;
-import com.xiantang.androidstructure.mvp.MvpDemoActivity;
+import com.xiantang.androidstructure.demo.mvc.MvcDemoActivity;
+import com.xiantang.androidstructure.demo.mvp.MvpDemoActivity;
 
 public class MainActivity extends BaseActivity {
 

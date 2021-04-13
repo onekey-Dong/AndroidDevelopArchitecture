@@ -1,4 +1,4 @@
-package com.xiantang.androidstructure.mvp;
+package com.xiantang.androidstructure.demo.mvp;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -9,8 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.xiantang.androidstructure.R;
-import com.xiantang.androidstructure.base.BaseActivity;
-import com.xiantang.androidstructure.base.BaseMvpActivity;
+import com.xiantang.androidstructure.base.mvp.BaseMvpActivity;
 
 public class MvpDemoActivity extends BaseMvpActivity<MvpPresenter> implements IMvp.IView {
 
@@ -35,14 +34,15 @@ public class MvpDemoActivity extends BaseMvpActivity<MvpPresenter> implements IM
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (mPresenter != null) {
-                    mPresenter.updateTextFromView(s.toString());
-                }
+
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-
+                log("afterTextChanged: " + s.toString());
+                if (mPresenter != null) {
+                    mPresenter.updateTextFromView(s.toString());
+                }
             }
         });
         btnClearText.setOnClickListener(v -> {

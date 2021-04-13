@@ -1,6 +1,6 @@
-package com.xiantang.androidstructure.base;
+package com.xiantang.androidstructure.base.mvp;
 
-public abstract class BaseMvpPresenter<V extends IBaseMvp.IView, M extends IBaseMvp.IModel> implements IBaseMvp.IPresenter<V , M> {
+public abstract class BaseMvpPresenter<V, M extends IBaseMvp.IModel> implements IBaseMvp.IPresenter<V , M> {
 
     protected V mView;
     protected M mModel;
@@ -31,5 +31,7 @@ public abstract class BaseMvpPresenter<V extends IBaseMvp.IView, M extends IBase
         if (mModel != null) {
             mModel.releaseRes();
         }
+        mView = null;
+        mModel = null;
     }
 }

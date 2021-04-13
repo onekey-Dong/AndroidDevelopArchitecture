@@ -1,4 +1,4 @@
-package com.xiantang.androidstructure.mvc;
+package com.xiantang.androidstructure.demo.mvc;
 
 public interface IMvc {
 

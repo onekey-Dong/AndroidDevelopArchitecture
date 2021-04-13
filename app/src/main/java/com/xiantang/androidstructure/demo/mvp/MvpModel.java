@@ -1,6 +1,6 @@
-package com.xiantang.androidstructure.mvp;
+package com.xiantang.androidstructure.demo.mvp;
 
-import com.xiantang.androidstructure.base.BaseMvpModel;
+import com.xiantang.androidstructure.base.mvp.BaseMvpModel;
 
 public class MvpModel extends BaseMvpModel<MvpPresenter> implements IMvp.IModel {
 

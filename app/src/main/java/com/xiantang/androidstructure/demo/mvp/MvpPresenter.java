@@ -1,8 +1,8 @@
-package com.xiantang.androidstructure.mvp;
+package com.xiantang.androidstructure.demo.mvp;
 
-import com.xiantang.androidstructure.base.BaseMvpPresenter;
+import com.xiantang.androidstructure.base.mvp.BaseMvpPresenter;
 
-public class MvpPresenter extends BaseMvpPresenter<MvpDemoActivity, MvpModel> implements IMvp.IPresenter {
+public class MvpPresenter extends BaseMvpPresenter<IMvp.IView, MvpModel> implements IMvp.IPresenter {
 
     @Override
     public MvpModel createModel() {

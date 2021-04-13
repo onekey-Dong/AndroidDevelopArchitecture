@@ -1,7 +1,9 @@
-package com.xiantang.androidstructure.base;
+package com.xiantang.androidstructure.base.mvp;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+
+import com.xiantang.androidstructure.base.BaseActivity;
 
 public abstract class BaseMvpActivity<P extends IBaseMvp.IPresenter> extends BaseActivity implements IBaseMvp.IView<P> {
 

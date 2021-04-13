@@ -1,4 +1,4 @@
-package com.xiantang.androidstructure.mvp;
+package com.xiantang.androidstructure.demo.mvp;
 
 public interface IMvp {
 

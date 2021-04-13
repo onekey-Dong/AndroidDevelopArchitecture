@@ -1,8 +1,14 @@
-package com.xiantang.androidstructure.base;
+package com.xiantang.androidstructure.base.mvp;
 
 public interface IBaseMvp {
 
-    interface IPresenter<V extends IView, M extends IModel> {
+    /**
+     * do not limit the V round, in order to decouple
+     *
+     * @param <V> data show
+     * @param <M> data deal
+     */
+    interface IPresenter<V, M extends IModel> {
 
         void setView(V view);
 
